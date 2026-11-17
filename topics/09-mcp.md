@@ -422,6 +422,23 @@ Yes – the Claude API's **MCP connector** lets a request reference **remote MCP
 
 </details>
 
+### 32. What is A2A (Agent2Agent), and how does it relate to MCP?
+
+<details>
+<summary>Answer</summary>
+
+**A2A** is an open protocol, contributed by Google and now an open-source project under the Linux Foundation (spec v1.0), for **agents to communicate with other agents** – often agents built by different teams or companies on different frameworks – without exposing their internal tools, memory or prompts.
+
+Core concepts:
+- **Agent Card** – a JSON document describing an agent's identity, endpoint, skills, capabilities (streaming, push notifications) and auth schemes, usually published at `/.well-known/agent-card.json`.
+- **Tasks** – stateful units of work with states such as working, input-required, completed or failed; results are returned as **artifacts** made of parts (text, files, structured data).
+- **Messages** between client agent and remote agent; **streaming** over Server-Sent Events, **push notifications** via webhooks for long-running tasks.
+- Runs over HTTPS with JSON-RPC, gRPC or REST bindings and standard auth (OAuth, API keys, mTLS).
+
+**A2A vs MCP:** MCP connects an agent **to its tools and data** (vertical); A2A connects **agents to other agents** (horizontal) for multi-turn collaboration on tasks. They're complementary – e.g. a travel agent uses A2A to delegate to a partner's booking agent, and each agent uses MCP to reach its own systems.
+
+</details>
+
 ---
 
 [⬅ Previous: Tool Use (Function Calling)](08-tool-use.md) · [⬅ Back to index](../README.md) · [Next: RAG & Agentic Search ➡](10-rag-search.md)

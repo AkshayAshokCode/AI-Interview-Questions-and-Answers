@@ -126,6 +126,21 @@ Benchmarks measure general abilities on fixed tasks that may not resemble yours,
 
 </details>
 
+### 11. How do you run AI models locally as a developer, and when would you?
+
+<details>
+<summary>Answer</summary>
+
+Tools like **Ollama**, **LM Studio**, **llama.cpp** (and MLX on Apple silicon) download open-weight models in quantised formats and run them on your laptop, often exposing a local HTTP API compatible with common client libraries.
+
+**Why:** privacy (data never leaves the machine), offline work, no per-token cost for experiments, predictable behaviour for tests, and learning how models behave.
+
+**Limits:** smaller models are noticeably weaker than frontier cloud models at complex reasoning and coding; you need enough RAM/VRAM (roughly the model's size in memory – a 4-bit 8B model needs around 5–6 GB); generation is slower on modest hardware; and you manage model updates yourself.
+
+A common setup: local models for prototyping, private data experiments and cheap bulk tasks; cloud models for production features that need the best quality.
+
+</details>
+
 ---
 
 [⬅ Previous: Efficiency: Cost, Latency & Scale](15-efficiency-cost-latency.md) · [⬅ Back to index](../README.md) · [Next: Multimodal Inputs & Model Features ➡](17-multimodal-features.md)

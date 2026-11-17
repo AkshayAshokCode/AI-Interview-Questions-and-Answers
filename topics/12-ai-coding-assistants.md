@@ -260,6 +260,21 @@ Look beyond "lines generated": lead time for changes, PR cycle time, review time
 
 </details>
 
+### 24. What is spec-driven development with coding agents?
+
+<details>
+<summary>Answer</summary>
+
+Writing a **specification before the agent writes code**, and making the spec the source of truth:
+1. **Spec** – the problem, requirements, acceptance criteria, constraints, edge cases and non-goals, often as a markdown file in the repo.
+2. **Plan** – the agent (or you, together) turns the spec into a technical design and a task list; you review it.
+3. **Implement** – the agent works through tasks, with tests derived from the acceptance criteria.
+4. **Verify** – check the result against the spec; update the spec when requirements change, not just the code.
+
+Why it helps: agents follow clear written requirements far better than vague chat requests, reviews have a reference, and the spec documents intent for future changes. Tools support this workflow (plan mode in Claude Code, spec templates such as GitHub's Spec Kit), but the core skill is writing a good spec – the "Description" part of AI fluency.
+
+</details>
+
 ---
 
 [⬅ Previous: Agents & Workflows](11-agents-workflows.md) · [⬅ Back to index](../README.md) · [Next: Evals (Evaluating AI Features) ➡](13-evals.md)

@@ -17,7 +17,22 @@ Covers: what we mean by "AI", how an assistant gets its character, and the four 
 
 </details>
 
-### 2. What is a large language model?
+### 2. What's the difference between AI, machine learning, deep learning and generative AI?
+
+<details>
+<summary>Answer</summary>
+
+They're nested:
+- **Artificial intelligence (AI)** – the broad field of making computers do tasks that normally need human intelligence; it includes rule-based systems and search, not only learning.
+- **Machine learning (ML)** – AI that **learns patterns from data** instead of being explicitly programmed: spam filters, recommendations, fraud detection, demand forecasting.
+- **Deep learning** – ML using **neural networks with many layers**; it powers image recognition, speech recognition and modern language models.
+- **Generative AI** – deep learning models that **create new content** (text, code, images, audio, video), such as large language models (Claude, Gemini, GPT) and image generators.
+
+For a software engineer: most "AI features" today mean calling a generative model through an API, while classic ML still powers things like ranking, fraud scores and forecasting behind the scenes.
+
+</details>
+
+### 3. What is a large language model?
 
 <details>
 <summary>Answer</summary>
@@ -28,7 +43,7 @@ It generates text **autoregressively**: predict a probability distribution over 
 
 </details>
 
-### 3. How does an AI assistant get its "character" and behaviour?
+### 4. How does an AI assistant get its "character" and behaviour?
 
 <details>
 <summary>Answer</summary>
@@ -43,7 +58,7 @@ So an assistant's personality and boundaries are deliberately trained, not accid
 
 </details>
 
-### 4. How is a modern chat LLM trained, end to end?
+### 5. How is a modern chat LLM trained, end to end?
 
 <details>
 <summary>Answer</summary>
@@ -69,7 +84,7 @@ See [Fine-Tuning & Alignment](16-choosing-models.md).
 
 ## Property 1: Next-Token Prediction
 
-### 5. How does an LLM generate a response, in plain terms?
+### 6. How does an LLM generate a response, in plain terms?
 
 <details>
 <summary>Answer</summary>
@@ -83,7 +98,7 @@ Consequences for users: the model writes **left to right without a separate "fac
 
 </details>
 
-### 6. What are tokens and the context window, and why do they matter to engineers?
+### 7. What are tokens and the context window, and why do they matter to engineers?
 
 <details>
 <summary>Answer</summary>
@@ -95,7 +110,7 @@ Engineering implications: budget tokens (system prompt, history, retrieved chunk
 
 </details>
 
-### 7. How does decoding work? Explain temperature, top-k and top-p.
+### 8. How does decoding work? Explain temperature, top-k and top-p.
 
 <details>
 <summary>Answer</summary>
@@ -112,7 +127,7 @@ Use low temperature for extraction, classification and code; higher for brainsto
 
 </details>
 
-### 8. Why does the same prompt give different answers?
+### 9. Why does the same prompt give different answers?
 
 <details>
 <summary>Answer</summary>
@@ -125,7 +140,7 @@ For reliability: low temperature, structured outputs, explicit instructions, pin
 
 </details>
 
-### 9. What follows from the fact that models generate text one token at a time?
+### 10. What follows from the fact that models generate text one token at a time?
 
 <details>
 <summary>Answer</summary>
@@ -138,7 +153,7 @@ For reliability: low temperature, structured outputs, explicit instructions, pin
 
 </details>
 
-### 10. Why do LLMs struggle with counting letters, arithmetic and some simple tasks?
+### 11. Why do LLMs struggle with counting letters, arithmetic and some simple tasks?
 
 <details>
 <summary>Answer</summary>
@@ -152,7 +167,7 @@ Mitigations: chain-of-thought or reasoning models, **tool use** (calculator, cod
 
 </details>
 
-### 11. What is in-context learning?
+### 12. What is in-context learning?
 
 <details>
 <summary>Answer</summary>
@@ -163,7 +178,7 @@ The ability of LLMs to perform a new task from **instructions and examples in th
 
 ## Property 2: Knowledge
 
-### 12. Where does a model's knowledge come from, and what are its gaps?
+### 13. Where does a model's knowledge come from, and what are its gaps?
 
 <details>
 <summary>Answer</summary>
@@ -178,7 +193,7 @@ Fix knowledge gaps by giving the model the information: documents in the prompt,
 
 </details>
 
-### 13. What is a knowledge cutoff, and how do you handle questions about recent events?
+### 14. What is a knowledge cutoff, and how do you handle questions about recent events?
 
 <details>
 <summary>Answer</summary>
@@ -187,7 +202,7 @@ The model's training data stops at a certain date, so it doesn't know later even
 
 </details>
 
-### 14. What are hallucinations, why do they happen, and how do you reduce them?
+### 15. What are hallucinations, why do they happen, and how do you reduce them?
 
 <details>
 <summary>Answer</summary>
@@ -206,7 +221,7 @@ A hallucination is fluent output that is **false or unsupported** (invented cita
 
 </details>
 
-### 15. Why do models sometimes invent APIs, packages or citations?
+### 16. Why do models sometimes invent APIs, packages or citations?
 
 <details>
 <summary>Answer</summary>
@@ -217,7 +232,7 @@ They generate what **looks like** a correct answer from patterns: a function nam
 
 ## Property 3: Working Memory
 
-### 16. What does it mean that LLMs are "stateless"? How does chat memory work?
+### 17. What does it mean that LLMs are "stateless"? How does chat memory work?
 
 <details>
 <summary>Answer</summary>
@@ -226,7 +241,7 @@ The model itself remembers nothing between requests: each API call must include 
 
 </details>
 
-### 17. What are the limits of the context window as working memory?
+### 18. What are the limits of the context window as working memory?
 
 <details>
 <summary>Answer</summary>
@@ -241,7 +256,7 @@ Good practice: keep context relevant, put key instructions clearly, and verify d
 
 </details>
 
-### 18. Why might an assistant "forget" something you told it earlier in a long chat?
+### 19. Why might an assistant "forget" something you told it earlier in a long chat?
 
 <details>
 <summary>Answer</summary>
@@ -252,7 +267,7 @@ Possible reasons: the earlier messages were **truncated or summarised** by the a
 
 ## Property 4: Steerability
 
-### 19. What does "steerability" mean, and how can you steer a model?
+### 20. What does "steerability" mean, and how can you steer a model?
 
 <details>
 <summary>Answer</summary>
@@ -268,7 +283,7 @@ Modern models follow instructions closely, often literally – so vague or contr
 
 </details>
 
-### 20. What are the limits of steering a model with prompts?
+### 21. What are the limits of steering a model with prompts?
 
 <details>
 <summary>Answer</summary>
@@ -281,7 +296,7 @@ Modern models follow instructions closely, often literally – so vague or contr
 
 </details>
 
-### 21. What is sycophancy in LLMs, and why does it matter?
+### 22. What is sycophancy in LLMs, and why does it matter?
 
 <details>
 <summary>Answer</summary>
@@ -292,7 +307,7 @@ The tendency of models to **agree with the user** or tell them what they want to
 
 ## Other Capabilities
 
-### 22. What is extended (adaptive) thinking, from a user's point of view?
+### 23. What is extended (adaptive) thinking, from a user's point of view?
 
 <details>
 <summary>Answer</summary>
@@ -303,7 +318,7 @@ Use more effort for multi-step reasoning, coding, maths, planning and agentic wo
 
 </details>
 
-### 23. What are multimodal LLMs?
+### 24. What are multimodal LLMs?
 
 <details>
 <summary>Answer</summary>
@@ -314,7 +329,7 @@ Models that accept (and sometimes produce) more than text: images, audio, video,
 
 ## Putting It Together
 
-### 24. What happens when these properties collide?
+### 25. What happens when these properties collide?
 
 <details>
 <summary>Answer</summary>
@@ -329,7 +344,7 @@ Recognising the interaction tells you the fix: supply knowledge, restate instruc
 
 </details>
 
-### 25. How do you diagnose an unexpected AI output?
+### 26. How do you diagnose an unexpected AI output?
 
 <details>
 <summary>Answer</summary>
@@ -349,7 +364,7 @@ This mental model is more useful than "the AI is dumb" – it turns failures int
 
 </details>
 
-### 26. What are LLMs good at, and where are they weak?
+### 27. What are LLMs good at, and where are they weak?
 
 <details>
 <summary>Answer</summary>
@@ -368,7 +383,7 @@ The practical rule: give the model the information it needs, give it tools for e
 
 </details>
 
-### 27. Where on the capability–limitation spectrum do common engineering tasks fall?
+### 28. Where on the capability–limitation spectrum do common engineering tasks fall?
 
 <details>
 <summary>Answer</summary>

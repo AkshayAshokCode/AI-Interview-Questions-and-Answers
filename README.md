@@ -1,6 +1,6 @@
 # AI Interview Questions – Cheat Sheet
 
-The AI questions **every software engineer** should be ready for – Android, iOS, backend or frontend: **345 questions with interview-ready answers** in 22 topics. It covers what engineers are expected to know about AI today – AI capabilities and limitations, AI fluency, using AI tools well (AI fluency, AI coding assistants like Claude Code), prompting and context, adding AI features to apps (LLM APIs, tool use, MCP, RAG, agents), testing and evals, guardrails, cost and latency, and AI feature design. No machine-learning maths, statistics or model training – this is about using AI, following the topics in the free Anthropic Academy courses.
+The AI questions **every software engineer** should be ready for – Android, iOS, backend or frontend: **349 questions with interview-ready answers** in 22 topics. It covers what engineers are expected to know about AI today – AI capabilities and limitations, AI fluency, using AI tools well (AI fluency, AI coding assistants like Claude Code), prompting and context, adding AI features to apps (LLM APIs, tool use, MCP, RAG, agents), testing and evals, guardrails, cost and latency, and AI feature design. No machine-learning maths, statistics or model training – this is about using AI, following the topics in the free Anthropic Academy courses.
 
 Every answer is hidden in a collapsible block, so you can **test yourself first** and then click to check.
 
@@ -30,7 +30,7 @@ Also see: **[Android](https://github.com/AkshayAshokCode/Android-Interview-Quest
 | # | Topic | Questions | Key areas |
 |---|---|---|---|
 | 01 | [AI in Software Engineering Interviews](topics/01-ai-interviews-overview.md) | 9 | What gets asked, "how do you use AI?", AI-allowed coding rounds, what is and isn\'t expected, opinion questions, preparation |
-| 02 | [AI Capabilities & Limitations](topics/02-how-llms-work.md) | 27 | Generative AI, how assistants get their character, next-token prediction, knowledge, working memory, steerability, when properties collide, diagnosing odd outputs |
+| 02 | [AI Capabilities & Limitations](topics/02-how-llms-work.md) | 28 | Generative AI, how assistants get their character, next-token prediction, knowledge, working memory, steerability, when properties collide, diagnosing odd outputs, AI vs ML vs deep learning |
 | 03 | [AI Fluency: Working Effectively With AI](topics/03-ai-fluency.md) | 24 | The 4Ds in depth (Delegation, Description, Discernment, Diligence), automation/augmentation/agency, project delegation, the description–discernment loop, verification, when not to use AI |
 
 ### ✍️ Prompting & Context
@@ -47,10 +47,10 @@ Also see: **[Android](https://github.com/AkshayAshokCode/Android-Interview-Quest
 |---|---|---|---|
 | 07 | [Building With LLM APIs](topics/07-building-with-llm-apis.md) | 17 | Calling an LLM from a mobile/web app, messages and multi-turn, streaming, stop reasons, errors and rate limits, key security, testing LLM code |
 | 08 | [Tool Use (Function Calling)](topics/08-tool-use.md) | 10 | Tool definitions, the tool loop, parallel calls, errors, server tools (web search, code execution), many tools, tool security |
-| 09 | [Model Context Protocol (MCP)](topics/09-mcp.md) | 31 | Why MCP, request flow, tools/resources/prompts in depth, building and testing servers, clients, JSON-RPC messages and handshake, stdio vs StreamableHTTP, stateless scaling, sampling, notifications, roots, OAuth, security |
+| 09 | [Model Context Protocol (MCP)](topics/09-mcp.md) | 32 | Why MCP, request flow, tools/resources/prompts in depth, building and testing servers, clients, JSON-RPC messages and handshake, stdio vs StreamableHTTP, stateless scaling, sampling, notifications, roots, OAuth, security, A2A |
 | 10 | [RAG & Agentic Search](topics/10-rag-search.md) | 20 | Pipeline, embeddings, chunking, BM25 + hybrid search, reranking, contextual retrieval, permissions, evaluation, agentic search |
 | 11 | [Agents & Workflows](topics/11-agents-workflows.md) | 20 | Workflow patterns, when to build an agent, ReAct, planning, memory, subagents, skills, human-in-the-loop, long-running agents |
-| 12 | [AI Coding Assistants & Claude Code](topics/12-ai-coding-assistants.md) | 23 | Types of AI coding tools, good coding requests, debugging, tests, code review, sharing code safely, CLAUDE.md, plan mode, hooks, reviewing AI code |
+| 12 | [AI Coding Assistants & Claude Code](topics/12-ai-coding-assistants.md) | 24 | Types of AI coding tools, good coding requests, debugging, tests, code review, sharing code safely, CLAUDE.md, plan mode, hooks, reviewing AI code, spec-driven development |
 
 ### ✅ Quality, Safety & Efficiency
 
@@ -59,7 +59,7 @@ Also see: **[Android](https://github.com/AkshayAshokCode/Android-Interview-Quest
 | 13 | [Evals (Evaluating AI Features)](topics/13-evals.md) | 21 | Eval workflow, test datasets, code/model/human grading, rubrics, LLM-as-judge, RAG/agent/chatbot evals, CI, production monitoring |
 | 14 | [Guardrails, Safety & Security](topics/14-guardrails-safety.md) | 15 | Hallucination reduction, prompt injection, jailbreaks, moderation, PII, refusals, agent guardrails, OWASP LLM risks, data exfiltration |
 | 15 | [Efficiency: Cost, Latency & Scale](topics/15-efficiency-cost-latency.md) | 12 | Token economics, cost estimates, prompt caching rules, batch, routing, effort and model size, latency levers, spend monitoring |
-| 16 | [Choosing Models & Approaches](topics/16-choosing-models.md) | 10 | Model tiers, choosing a model, open vs API, on-device, prompting vs RAG vs fine-tuning, vendors, safe upgrades |
+| 16 | [Choosing Models & Approaches](topics/16-choosing-models.md) | 11 | Model tiers, choosing a model, open vs API, on-device, prompting vs RAG vs fine-tuning, vendors, safe upgrades, running models locally |
 | 17 | [Multimodal Inputs & Model Features](topics/17-multimodal-features.md) | 9 | Images, PDFs, extended thinking, code execution, web search, computer use, voice, image generation, Files API |
 
 ### 🏗 Applied
