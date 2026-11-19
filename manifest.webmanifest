@@ -2,7 +2,7 @@
   "name": "AI Interview Prep Tracker",
   "short_name": "AI Prep",
   "description": "Study AI and ML interview questions and track your progress.",
-  "start_url": "/AI-Interview-Questions-cheat-sheet/",
+  "start_url": "/AI-Interview-Questions-and-Answers/",
   "scope": "/",
   "display": "standalone",
   "background_color": "#f7f7f5",
@@ -25,5 +25,5 @@
       "purpose": "maskable"
     }
   ],
-  "id": "/AI-Interview-Questions-cheat-sheet/"
+  "id": "/AI-Interview-Questions-and-Answers/"
 }

@@ -1,14 +1,14 @@
-# AI Interview Questions – Cheat Sheet
+# AI Interview Questions & Answers
 
 The AI questions **every software engineer** should be ready for – Android, iOS, backend or frontend: **349 questions with interview-ready answers** in 22 topics. It covers what engineers are expected to know about AI today – AI capabilities and limitations, AI fluency, using AI tools well (AI fluency, AI coding assistants like Claude Code), prompting and context, adding AI features to apps (LLM APIs, tool use, MCP, RAG, agents), testing and evals, guardrails, cost and latency, and AI feature design. No machine-learning maths, statistics or model training – this is about using AI, following the topics in the free Anthropic Academy courses.
 
 Every answer is hidden in a collapsible block, so you can **test yourself first** and then click to check.
 
-> **📈 [Open the interactive study tracker](https://akshayashokcode.github.io/AI-Interview-Questions-cheat-sheet/)**: mark questions ✓ Done or ↻ Revise, see your progress per topic, search every question, listen to answers read aloud, and continue where you left off.
+> **📈 [Open the interactive study tracker](https://akshayashokcode.github.io/AI-Interview-Questions-and-Answers/)**: mark questions ✓ Done or ↻ Revise, see your progress per topic, search every question, listen to answers read aloud, and continue where you left off.
 >
 > **No account needed.** Your progress saves automatically on your device. Want to keep it safe and in sync across your devices? Sign in (optional).
 
-Also see: **[Android](https://github.com/AkshayAshokCode/Android-Interview-Questions-cheat-sheet)** · **[iOS](https://github.com/AkshayAshokCode/iOS-Interview-Questions-cheat-sheet)** · **[System Design](https://github.com/AkshayAshokCode/System-Design-Interview-Questions-cheat-sheet)**
+Also see: **[Android](https://github.com/AkshayAshokCode/Android-Interview-Questions-and-Answers)** · **[iOS](https://github.com/AkshayAshokCode/iOS-Interview-Questions-and-Answers)** · **[System Design](https://github.com/AkshayAshokCode/System-Design-Interview-Questions-and-Answers)**
 
 ---
 
