@@ -1,7 +1,7 @@
 {
   "name": "AI Interview Prep Tracker",
   "short_name": "AI Prep",
-  "description": "Study AI and ML interview questions and track your progress.",
+  "description": "Study AI interview questions for software engineers and track your progress.",
   "start_url": "/AI-Interview-Questions-and-Answers/",
   "scope": "/",
   "display": "standalone",
